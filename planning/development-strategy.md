@@ -26,13 +26,13 @@
 
 ### html `type: html`
 
-Input form <form>:
+Input form <_form_>:
 
-- Input field <input name="text">
-- Button Add <input type="button" value="add" />
-- Button Remove <input type="button" value="remove" />
+- Input field <_input name="text"_>
+- Button Add <_input type="button" value="add" /_>
+- Button Remove <_input type="button" value="remove" /_>
 
-Warnings <code id="warnings" class="warning"></code>
+Warnings <_code id="warnings" class="warning"_><_/code_>
 
 ### logic `type: logic`
 
@@ -65,8 +65,8 @@ Warnings <code id="warnings" class="warning"></code>
 
 ### html `type: html`
 
-- drop-down list <select id="sort-type">
-- <options> to choose with values: "oldest", "newest", "a", "z", "shortest", "longest".
+- drop-down list <_select id="sort-type"_>
+- <_options_> to choose with values: "oldest", "newest", "a", "z", "shortest", "longest".
 
 ### logic `type: logic`
 
