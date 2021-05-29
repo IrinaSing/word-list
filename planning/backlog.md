@@ -16,6 +16,8 @@
 - To sort the words in list in alphabetical order: a-z, z-a.
 - To sort the words in list in from newly added to older ones and back.
 - To sort the words in list by length: short-long, long-short.
+- To get error notification if I try to add symbols or numbers instead of word.
+- To get error notification if I try to remove a word that is not in the list.
 
 ## Could-haves
 
