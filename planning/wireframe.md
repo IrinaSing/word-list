@@ -1,3 +1,3 @@
 ## Wireframe
 
-![wireframe](/images/word-list.png)
+![wireframe](./images/word-list1.png)
