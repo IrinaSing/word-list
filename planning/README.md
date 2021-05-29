@@ -14,6 +14,8 @@ In this repository I work on re-creating a program that allows user to make and 
 - Planning
 - Project board
 - Writing code
+- Checking code (lint, document, format)
+- Pull requests with template
 - Retrospective
 
 ## Links
