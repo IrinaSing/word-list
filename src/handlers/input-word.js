@@ -1,9 +1,9 @@
-import { data } from "../data.js";
-import { isWord } from "../logic/is-word.js";
-import { sortStrings } from "../logic/sort-strings.js";
-import { updateList } from "../procedures/update-list.js";
+import { data } from '../data.js';
+import { isWord } from '../logic/is-word.js';
+import { sortStrings } from '../logic/sort-strings.js';
+import { updateList } from '../procedures/update-list.js';
 
-const warnings = document.getElementById("warnings");
+const warnings = document.getElementById('warnings');
 
 /**
  * Entry point for users adding a word to the list.
@@ -14,10 +14,10 @@ const warnings = document.getElementById("warnings");
 export const handleInputWord = (event) => {
   /* -- entry point for adding or removing a word -- */
   // debugger;
-  console.log("-- handler: input word --");
+  console.log('-- handler: input word --');
 
   /* -- check the target -- */
-  if (event.target.type !== "button") {
+  if (event.target.type !== 'button') {
     return;
   }
 
@@ -43,28 +43,7 @@ export const handleInputWord = (event) => {
   */
 
   // ... write some code ...
-  // if user pressed button "add"
-  if (action === "add") {
-    // check if the word contains only letters (logic)
-    if (!isWord(text)) {
-      warnings.innerHTML = `${text} is not a word`;
-    } else {
-      data.words.push(text); // if it is a word - push to array (data)
-    }
-    console.log(data);
-  }
 
-  // if user pressed button "remove"
-  if (action === "remove") {
-    // check if the list contains user input
-    if (!data.words.includes(text)) {
-      warnings.innerHTML = `${text} is not on the list`;
-    } else {
-      // remove word from the list
-      data.words.splice(data.words.indexOf(text), 1);
-    }
-    console.log(data);
-  }
   /* -- render new words -- */
   const sorted = sortStrings(data.words, data.sort);
   updateList(sorted);
