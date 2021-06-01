@@ -44,6 +44,7 @@ export const handleInputWord = (event) => {
 
   // ... write some code ...
   // if user pressed button "add"
+  warnings.innerHTML = "";
   if (action === "add") {
     // check if the word contains only letters (logic)
     if (!isWord(text)) {
