@@ -5,6 +5,7 @@
  * @returns {boolean} Whether or not the text is a word.
  * @example
  *
- * // ... write this!
+ * isWord('cat') // true
+ * isWord('45') // false
  */
-export const isWord = (text = '') => /^[a-zA-Z]+$/.test(text);
+export const isWord = (text = "") => /^[a-zA-Z]+$/.test(text);

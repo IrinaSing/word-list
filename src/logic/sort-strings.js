@@ -18,7 +18,7 @@
  * @example
  *
  *sortStrings(['cat', 'arc', 'bar'], sortType = "a") // ['arc', 'bar', 'cat']
- * // ... write this!
+ *
  */
 export const sortStrings = (toSort = "", sortType = "oldest") => {
   const sortedList = [...toSort];
