@@ -1,5 +1,6 @@
 const listContainer = document.getElementById("list-container");
 
+// eslint-disable-next-line spellcheck/spell-checker
 /**
  * Renders an array of strings as an unordered list into the #list-container element
  *
