@@ -118,7 +118,8 @@ Checks if a string is a word. A word contains only letters.
 **Example**
 
 ```js
-// ... write this!
+isWord("cat"); // true
+isWord("45"); // false
 ```
 
 </details>
@@ -142,7 +143,7 @@ It does not modify the argument (no side-effects).
 **Example**
 
 ```js
-// ... write this!
+sortStrings(["cat", "arc", "bar"], (sortType = "a")); // ['arc', 'bar', 'cat']
 ```
 
 </details>
