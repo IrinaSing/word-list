@@ -1,3 +1,6 @@
+/* eslint-disable spellcheck/spell-checker */
+/* eslint-disable jsdoc/require-returns-check */
+/* eslint-disable prettier/prettier */
 /**
  * Sorts an array of strings in different ways.
  * It does not modify the argument (no side-effects).
@@ -14,6 +17,25 @@
  * @returns {string[]} a new sorted array containing the same strings as toSort
  * @example
  *
- * // ... write this!
+ *sortStrings(['cat', 'arc', 'bar'], sortType = "a") // ['arc', 'bar', 'cat']
+ *
  */
-export const sortStrings = () => {};
+export const sortStrings = (toSort = "", sortType = "oldest") => {
+  const sortedList = [...toSort];
+  if (sortType === "newest") {
+    return sortedList.reverse();
+  }
+  if (sortType === "a") {
+    return sortedList.sort();
+  }
+  if (sortType === "z") {
+    return sortedList.sort().reverse();
+  }
+  if (sortType === "shortest") {
+    return sortedList.sort((a, b) => a.length - b.length);
+  }
+  if (sortType === "longest") {
+    return sortedList.sort((a, b) => a.length - b.length).reverse();
+  }
+  return sortedList;
+};
