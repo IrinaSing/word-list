@@ -63,6 +63,7 @@ When you are creating your PR be sure to delete the checklists that are not need
   - The repository [requires a review](https://github.blog/2018-03-23-require-multiple-reviewers/) before pull requests can be merged.
   - The `master`/`main` branch must "_Require status checks to pass before merging_"
   - The `master`/`main` branch must "_Require require branches to be up to date before merging_"
+- In enable the _Actions_ section of your repository so the automated checks will run each time you send a PR to `master`/`main`
 
 ---
 
